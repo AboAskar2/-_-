@@ -1,0 +1,152 @@
+/* settings.css */
+/* Basic reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body theme styles */
+body.dark-mode {
+    background-color: #123;
+    color: #ccc;
+}
+
+body.light-mode {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Container */
+.settings-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: inherit; /* same as body */
+    border-radius: 8px;
+}
+
+/* Section styling */
+.section {
+    margin: 20px 0;
+}
+
+/* Theme section */
+.theme-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#themeLabel, #themeModeLabel {
+    font-weight: bold;
+}
+
+/* Language section */
+.language-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Profile section */
+.profile-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.profile-section label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.profile-section input[type="text"],
+.profile-section input[type="email"] {
+    padding: 8px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+}
+.profile-section input[type="file"] {
+    margin-top: 5px;
+}
+
+.picture-preview {
+    margin: 10px 0;
+}
+.picture-preview img {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+    border: 1px solid #999;
+}
+
+/* Save button */
+#saveButton {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #2196F3;
+    color: white;
+    cursor: pointer;
+    align-self: flex-start;
+}
+#saveButton:hover {
+    background-color: #1976D2;
+}
+
+/* Toggle switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 24px;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+input:checked + .slider {
+    background-color: #2196F3;
+}
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Dark mode adjustments */
+body.dark-mode .profile-section input[type="text"],
+body.dark-mode .profile-section input[type="email"] {
+    background-color: #3c3f44;
+    color: #eee;
+    border: 1px solid #555;
+}
+body.dark-mode #saveButton {
+    background-color: #4a6fa5;
+}
+body.dark-mode #saveButton:hover {
+    background-color: #395278;
+}

@@ -1,0 +1,98 @@
+
+* {
+  padding: 0px;
+  margin: 0px;
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+  text-transform: capitalize;
+}
+body {
+  background-color: #123;
+  display: flex;
+
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile h2 {
+  font-size: 20px;
+}
+
+.img-box {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid rgb(255, 255, 255);
+  flex-shrink: 0;
+}
+.img-box img {
+  width: 100%;
+}
+
+.sidebar {
+  background-color: rgb(17, 39, 60);
+  width: 50px;
+  height: 100%;
+  padding: 20px;
+  overflow: hidden;
+  transition: 0.5s;
+  position: fixed; /* تثبيت المنيو على اليسار */
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+
+.sidebar:hover {
+  width: 260px;
+}
+
+
+
+
+main {
+  width: 100%;
+  margin-left: 150px;   /* حتى يكون مكان للمنيو */
+  margin-top: 180px;
+}
+ul {
+  list-style: none;
+  position: relative;
+  height: 95%;
+}
+ul li a {
+  display: block;
+  text-decoration: none;
+  /* background-color: rgb(29, 23, 70); */
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  transition: 0.5s;
+}
+ul li a:hover,
+.active,
+.data-info .box:hover:hover {
+  background-color: #ffffff55;
+}
+
+ul li a i {
+  font-size: 30px;
+}
+.log-out {
+  border-radius: 8px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.log-out a {
+  background-color: #a00;
+}

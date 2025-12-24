@@ -1,0 +1,192 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+  text-transform: capitalize;
+ 
+}
+body {
+  background-color: #001;
+  display: flex;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile h2 {
+  font-size: 20px;
+}
+
+.img-box {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid rgb(255, 255, 255);
+  flex-shrink: 0;
+}
+.img-box img {
+  width: 100%;
+}
+.menu {
+  background-color: rgb(37, 41, 63);
+  width: 50px;
+  height: 100%;
+  padding: 20px;
+  overflow: hidden;
+  transition: 0.5s;
+  position: fixed;   
+  left: 0;
+  bottom: 0;         /* حتى يغطي كل الطول */
+}
+
+/* .menu {
+  background-color: rgb(37, 41, 63);
+  width: 50px;
+  height: 100vh;
+  padding: 20px;
+  overflow: hidden;
+
+  transition: 0.5s;
+} */
+.menu:hover {
+  width: 260px;
+}
+ul {
+  list-style: none;
+  position: relative;
+  height: 95%;
+}
+ul li a {
+  display: block;
+  text-decoration: none;
+  /* background-color: rgb(29, 23, 70); */
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  transition: 0.5s;
+}
+ul li a:hover,
+.active,
+.data-info .box:hover, td:hover {
+  background-color: #ffffff55;
+}
+
+.log-out {
+  border-radius: 8px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.log-out a {
+  background-color: #a00;
+}
+
+ul li a i {
+  font-size: 30px;
+}
+.content {
+  /* background-color: brown; */
+  width: 100%;
+  margin-left: 90px;   /* حتى يكون مكان للمنيو */
+  margin-top: 10px;
+}
+
+/* .content { */
+  /* background-color: rgb(35, 53, 53); */
+  /* width: 100%; */
+  /* margin: 10px; */
+/* } */
+.title-info {
+  background-color: #0481ff;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.data-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px;
+}
+.data-info .box {
+  background-color: #123;
+  height: 150px;
+  flex-basis: 150px;
+  flex-grow: 1;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.data-info .box i {
+  font-size: 40px;
+}
+.data-info .box span {
+  font-size: 20px;
+}
+
+.data-info .box .data {
+  text-align: center;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 8px;
+  
+    /* color: #001; */
+    
+}
+
+.table-container {
+  max-height: 400px;    /* اختياري، ارتفاع منطقة الجدول */
+  overflow-y: auto; 
+  margin-top: 5px;    /* يخلي سكرول عمودي */
+}
+
+table thead th {
+ 
+  top: 0;
+  background-color: #0481ff;  /* لازم تخليه حتى يظهر فوق الصفوف */
+  z-index: 10;
+ 
+}
+
+td ,th{
+background-color: #192430;
+border-radius: 6px;
+padding: 8px;
+}
+
+th{
+
+    background-color:#0481ff ;
+    transition: .5s;
+}
+.price, .count{
+ padding: 6px;   
+border-radius: 6px;
+
+}
+.price{
+    background-color: green;
+}
+.count{
+    color: black;
+    background-color: gold;
+}

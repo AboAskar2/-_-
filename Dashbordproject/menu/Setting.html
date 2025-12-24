@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Settings</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Optional: include Font Awesome for icons -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
+    <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+    <div class="settings-container">
+        <h1 id="settingsTitle">Settings</h1>
+        <div class="section theme-section">
+            <label for="themeToggle" id="themeLabel">Theme</label>
+            <span id="themeModeLabel">Dark Mode</span>
+            <label class="switch">
+                <input type="checkbox" id="themeToggle">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="section language-section">
+            <label for="languageSelect" id="languageLabel">Language</label>
+            <select id="languageSelect">
+                <option value="en">English</option>
+                <option value="ar">Arabic</option>
+            </select>
+        </div>
+        <div class="section profile-section">
+            <h2 id="profileTitle">Profile Information</h2>
+            <form id="profileForm">
+                <label for="nameInput" id="nameLabel">Name</label>
+                <input type="text" id="nameInput" placeholder="">
+                
+                <label for="emailInput" id="emailLabel">Email</label>
+                <input type="email" id="emailInput" placeholder="">
+<!--                 
+                <label for="pictureInput" id="pictureLabel">Profile Picture</label>
+                <input type="file" id="pictureInput" accept="image/*">
+                 -->
+                <!-- <div class="picture-preview">
+                    <img id="picturePreview" src="" alt="Profile Preview">
+                </div>
+                 -->
+                <button type="button" id="saveButton">Save Profile</button>
+            </form>
+        </div>
+    </div>
+    <script src="settings.js"></script>
+</body>
+</html>

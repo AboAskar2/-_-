@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  <title>Clients Dashboard</title>
+  <link rel="stylesheet" href="clint.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Client List</h1>
+    <button id="addClientBtn" class="button">Add Client</button>
+    <input type="text" id="searchInput" placeholder="Search clients..." />
+
+    <table id="clientsTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Client rows will be inserted here -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Modal for adding a new client -->
+  <div id="clientModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Add New Client</h2>
+      <form id="clientForm">
+        <label>
+          Name (required)<br>
+          <input type="text" id="nameInput" required>
+        </label><br>
+        <label>
+          Email (required)<br>
+          <input type="email" id="emailInput" required>
+        </label><br>
+        <label>
+          Phone<br>
+          <input type="text" id="phoneInput">
+        </label><br>
+        <button type="submit">Add Client</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="clients.js"></script>
+
+  <footer>
+    <!-- <button class="" placeholder="home"></button>
+     <div class="backtohome">
+       -->
+     </div>
+  </footer>
+</body>
+</html>

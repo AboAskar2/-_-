@@ -1,0 +1,151 @@
+/* Container and general styles */
+body {
+  font-family: Arial, sans-serif;
+  background: #123;
+  color: #ffffff;
+  /* margin-top: 50px;
+  margin: 60px ;
+  padding: 10px; */
+}
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: hsl(229, 35%, 75%);
+  padding: 20px;
+  border-radius: 8px;
+}
+h1 {
+  margin-top: 0;
+}
+.button {
+  background-color: #28a745;
+  color: #ffeded;
+  border: none;
+  padding: 10px 16px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid #123;
+}
+.button:hover {
+  background-color: #218838;
+}
+#searchInput {
+  width: 100%;
+  padding: 8px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+table th, table td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #000000;
+}
+table th {
+  background-color: #2a5488;
+}
+
+/* Modal styles (initially hidden) */
+.modal {
+  display: none;            /* Hidden by default */
+  position: fixed;          /* Stay in place */
+  z-index: 1;               /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;              /* Full width */
+  height: 100%;             /* Full height */
+  overflow: auto;           /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;         /* 10% from top and centered */
+  padding: 20px;
+  border: 1px solid #a3a3a3;
+  width: 80%;
+  max-width: 400px;         /* Max width */
+  border-radius: 8px;
+}
+.close {
+  color: #662c2c;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.close:hover {
+  color: #000;
+}
+
+/* Form inside modal */
+#clientForm{
+
+  background-color: hsl(229, 35%, 75%);
+  padding: 20px;
+  border-radius: 8px;
+}
+#clientForm label {
+  display: block;
+  margin-top: 10px;
+  background-color: #547684;
+  border-radius: 8px;
+  padding: 8px;
+
+}
+#clientForm input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  box-sizing: border-box;
+}
+#clientForm button {
+  margin-top: 15px;
+  padding: 10px 16px;
+    border-radius: 8px;
+    background-color: #28a745;
+    color: #fff;
+    font-style: normal;
+
+
+}
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+footer button{
+  width: 80px;
+  height: 80px;
+  
+}
+
+
+/* .backtohome {
+background-color: aqua;
+width: 70px;
+height: 90px;
+border-radius: 8px;
+
+
+}
+.backtohome a i{
+font-size: 40px;
+
+}
+.backtohome a p{
+font-size: 16px;
+
+
+} */

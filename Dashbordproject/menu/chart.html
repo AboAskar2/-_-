@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Charts</title>
+
+
+   <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  <link rel="stylesheet" href="chart.css">
+</head>
+<body>
+  <!-- Sidebar navigation -->
+  <aside class="sidebar">
+   <ul>
+        <li class="profile">
+          <div class="img-box">
+            <img src="/imges/images.jpeg" alt="" />
+          </div>
+          <h2>ABO ASKAR</h2>
+        </li>
+        <li>
+          <a class="active">
+            <i class="fas fa-home"> </i>
+            <p>Dashbord</p>
+          </a>
+        </li>
+        <li>
+          <a href="/menu/clint.html">
+            <i class="fas fa-user-group"> </i>
+            <p>clints</p>
+          </a>
+        </li>
+        <li>
+          <a href="/menu/Proudcts.html">
+            <i class="fas fa-table"> </i>
+            <p>Proudcts</p>
+          </a>
+        </li>
+        <li>
+          <a href="/menu/chart.html">
+            <i class="fas fa-chart-pie"> </i>
+            <p>Charts</p>
+          </a>
+        </li>
+        <li>
+          <a href="/menu/posts.html">
+            <i class="fas fa-pen"> </i>
+            <p>posts</p>
+          </a>
+        </li>
+
+        <li>
+          <a href="/menu/Favorite.html">
+            <i class="fas fa-star"> </i>
+            <p>Favorite</p>
+          </a>
+        </li>
+
+        <li>
+          <a href="/menu/Setting.html">
+            <i class="fas fa-cog"> </i>
+            <p>Setting</p>
+          </a>
+        </li>
+
+        <li class="log-out">
+          <a href="/menu/logout.html">
+            <i class="fas fa-sign-out"> </i>
+            <p>Log Out</p>
+          </a>
+        </li>
+      </ul>
+  </aside>
+
+  <!-- Main content -->
+  <main class="content">
+    <h1>Charts</h1>
+    <!-- Canvas for bar chart -->
+    <canvas id="salesChart" width="400" height="250" style="border:1px solid #ccc;">
+      Your browser does not support the Canvas element.
+    </canvas>
+    <script>
+      // Draw simple bar chart on canvas
+      const canvas = document.getElementById('salesChart');
+      const ctx = canvas.getContext('2d');
+      // Bar 1
+      ctx.fillStyle = '#4CAF50';
+      ctx.fillRect(50, 100, 50, 100);  // x, y, width, height
+      ctx.fillStyle = 'black';
+      ctx.font = '14px sans-serif';
+      ctx.fillText('Apples', 50, 220);
+      // Bar 2
+      ctx.fillStyle = '#2196F3';
+      ctx.fillRect(150, 50, 50, 150);
+      ctx.fillStyle = 'black';
+      ctx.fillText('Oranges', 150, 220);
+    </script>
+  </main>
+</body>
+</html>
